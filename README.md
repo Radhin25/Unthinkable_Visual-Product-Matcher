@@ -87,37 +87,15 @@ Workflow:
 
 ## ⚡ Quick Start
 
-Windows PowerShell (copy-paste):
-
-```powershell
-# 1) Clone and enter folder
-git clone https://github.com/priyanshusingh017/Visual_Product_Matcher.git; cd Visual_Product_Matcher
-
-# 2) Create & activate venv
-python -m venv .venv; .\.venv\Scripts\Activate.ps1
-
-# 3) Install dependencies
-pip install -r requirements.txt
-
-# 4) Configure API key
-Copy-Item .env.example .env; notepad .env  # add GEMINI_API_KEY=<your_key>
-
-# 5) Run the app
-python app.py
-```
-
-Then open http://localhost:5000
-
 Mac/Linux (copy-paste):
-
 ```bash
 # 1) Clone and enter folder
-git clone https://github.com/priyanshusingh017/Visual_Product_Matcher.git
-cd Visual_Product_Matcher
+git clone https://github.com/Radhin25/Unthinkable_Visual-Product-Matcher.git
+cd Unthinkable_Visual-Product-Matcher
 
 # 2) Create & activate venv
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 
 # 3) Install dependencies
 pip3 install -r requirements.txt
@@ -878,9 +856,9 @@ time curl -X POST -F "image=@test.jpg" http://localhost:5000/api/search
 Need help? Here's how to get support:
 
 - 📧 **Email:** laxmanradhin@gmail.com
-- 🐛 **Bug Reports:** Open an issue on GitHub
-- 💡 **Feature Requests:** Open an issue with "enhancement" label
-- ❓ **Questions:** Open an issue with "question" label
+- 🐛 **Bug Reports:** [Open an issue](https://github.com/Radhin25/Unthinkable_Visual-Product-Matcher/issues)
+- 💡 **Feature Requests:** [Open an issue](https://github.com/Radhin25/Unthinkable_Visual-Product-Matcher/issues) with "enhancement" label
+- ❓ **Questions:** [Open an issue](https://github.com/Radhin25/Unthinkable_Visual-Product-Matcher/issues) with "question" label
 
 ---
 
