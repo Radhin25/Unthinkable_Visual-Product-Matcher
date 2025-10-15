@@ -78,19 +78,39 @@ Prerequisites:
 - Git
 - Gemini API Key (https://makersuite.google.com/app/apikey)
 
+Steps (Mac/Linux):
+1. Clone repo  
+   `git clone <your-repo-url> && cd "Visual_Product_Matcher-main"`
+2. Create venv and activate  
+   `python3 -m venv .venv && source .venv/bin/activate`
+3. Install dependencies  
+   `pip install -r requirements.txt`
+4. Configure environment  
+   `cp .env.example .env` and set `GEMINI_API_KEY` in `.env`
+5. Validate products  
+   `python validate_products.py`  # expects success
+6. Start the app  
+   `python app.py`  # visit http://localhost:5000
+
+> **Note for Mac/Linux:**  
+> If `python` is not found, use `python3` instead:
+> ```
+> python3 app.py
+> ```
+
 Steps (Windows PowerShell):
-1) Clone repo
-   git clone <your-repo-url>; cd "Visual Product Matcher Build"
-2) Create venv and activate
-   python -m venv .venv; .\.venv\Scripts\Activate.ps1
-3) Install dependencies
-   pip install -r requirements.txt
-4) Configure environment
-   Copy .env.example to .env and set GEMINI_API_KEY
-5) Validate products
-   python validate_products.py  # expects success
-6) Start the app
-   python app.py  # visit http://localhost:5000
+1. Clone repo  
+   `git clone <your-repo-url>; cd "Visual Product Matcher Build"`
+2. Create venv and activate  
+   `python -m venv .venv; .\.venv\Scripts\Activate.ps1`
+3. Install dependencies  
+   `pip install -r requirements.txt`
+4. Configure environment  
+   Copy `.env.example` to `.env` and set `GEMINI_API_KEY`
+5. Validate products  
+   `python validate_products.py`  # expects success
+6. Start the app  
+   `python app.py`  # visit http://localhost:5000`
 
 Dependencies (from requirements.txt):
 - Flask 3.1.2
