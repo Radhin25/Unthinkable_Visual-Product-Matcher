@@ -877,7 +877,7 @@ time curl -X POST -F "image=@test.jpg" http://localhost:5000/api/search
 
 Need help? Here's how to get support:
 
-- 📧 **Email:** singhpriyanshu661930@gmail.com
+- 📧 **Email:** laxmanradhin@gmail.com
 - 🐛 **Bug Reports:** Open an issue on GitHub
 - 💡 **Feature Requests:** Open an issue with "enhancement" label
 - ❓ **Questions:** Open an issue with "question" label
