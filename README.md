@@ -60,6 +60,8 @@ Key capabilities:
 
 Run locally then open http://localhost:5000
 
+Demo video: [Watch on Google Drive](https://drive.google.com/file/d/1NMxgkngfhFAvjE3W319q_ecPjdBGqK9d/view?usp=sharing)
+
 Workflow:
 1) Upload an image or paste a URL
 2) AI extracts visual features
@@ -818,7 +820,7 @@ MIT License (see LICENSE)
 
 Need help? Here's how to get support:
 
-- 📧 **Email:** singhpriyanshu661930@gmail.com
+- 📧 **Email:** laxmanradhin@gmail.com
 - 🐛 **Bug Reports:** Open an issue on GitHub
 - 💡 **Feature Requests:** Open an issue with "enhancement" label
 - ❓ **Questions:** Open an issue with "question" label
@@ -859,4 +861,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ Star this repo if you found it helpful!
 
-</div># Unthinkable_Visual-Product-Matcher
+</div>
