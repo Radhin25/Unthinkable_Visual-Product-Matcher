@@ -11,22 +11,24 @@
 
 ## 📖 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Demo](#demo)
-- [Technology Stack](#technology-stack)
-- [Quick Start](#quick-start)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [API](#api)
-- [Deployment](#deployment)
-- [Project Structure](#project-structure)
-- [How It Works](#how-it-works)
-- [Contributing](#contributing)
-- [Testing](#testing)
-- [License](#license)
-- [Support](#support)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Demo](#-demo)
+- [Technology Stack](#-technology-stack)
+- [Quick Start](#-quick-start)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Usage](#-usage)
+- [API](#-api)
+- [Deployment](#-deployment)
+- [Project Structure](#-project-structure)
+- [How It Works](#-how-it-works)
+- [Contributing](#-contributing)
+- [Testing](#-testing)
+- [Support](#-support)
+- [Project Stats](#-project-stats)
+- [Acknowledgments](#-acknowledgments)
+- [License](#-license)
 
 ---
 
@@ -56,6 +58,18 @@ Key capabilities:
 
 ---
 
+## 🧱 Technology Stack
+
+- Backend: Python 3.9+, Flask 3.1.2, Flask-Cors 4.0.0
+- AI: google-generativeai 0.8.3 (Gemini 2.0 Flash)
+- Imaging: Pillow 11.3.0
+- HTTP/Networking: requests 2.32.x
+- Frontend: HTML5, CSS3 (Grid/Flexbox), Vanilla JavaScript
+- Deployment: Gunicorn, Procfile/runtime.txt (Heroku/Render compatible)
+- CI: GitHub Actions (product validator + linting)
+
+---
+
 ## 🚀 Demo
 
 Run locally then open http://localhost:5000
@@ -71,6 +85,55 @@ Workflow:
 
 ---
 
+## ⚡ Quick Start
+
+Windows PowerShell (copy-paste):
+
+```powershell
+# 1) Clone and enter folder
+git clone https://github.com/priyanshusingh017/Visual_Product_Matcher.git; cd Visual_Product_Matcher
+
+# 2) Create & activate venv
+python -m venv .venv; .\.venv\Scripts\Activate.ps1
+
+# 3) Install dependencies
+pip install -r requirements.txt
+
+# 4) Configure API key
+Copy-Item .env.example .env; notepad .env  # add GEMINI_API_KEY=<your_key>
+
+# 5) Run the app
+python app.py
+```
+
+Then open http://localhost:5000
+
+Mac/Linux (copy-paste):
+
+```bash
+# 1) Clone and enter folder
+git clone https://github.com/priyanshusingh017/Visual_Product_Matcher.git
+cd Visual_Product_Matcher
+
+# 2) Create & activate venv
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 3) Install dependencies
+pip3 install -r requirements.txt
+
+# 4) Configure API key
+cp .env.example .env
+nano .env  # add GEMINI_API_KEY=<your_key>
+
+# 5) Run the app
+python3 app.py
+```
+
+Then open http://localhost:5000
+
+---
+
 ## 🛠 Installation
 
 Prerequisites:
@@ -78,39 +141,19 @@ Prerequisites:
 - Git
 - Gemini API Key (https://makersuite.google.com/app/apikey)
 
-Steps (Mac/Linux):
-1. Clone repo  
-   `git clone <your-repo-url> && cd "Visual_Product_Matcher-main"`
-2. Create venv and activate  
-   `python3 -m venv .venv && source .venv/bin/activate`
-3. Install dependencies  
-   `pip install -r requirements.txt`
-4. Configure environment  
-   `cp .env.example .env` and set `GEMINI_API_KEY` in `.env`
-5. Validate products  
-   `python validate_products.py`  # expects success
-6. Start the app  
-   `python app.py`  # visit http://localhost:5000
-
-> **Note for Mac/Linux:**  
-> If `python` is not found, use `python3` instead:
-> ```
-> python3 app.py
-> ```
-
 Steps (Windows PowerShell):
-1. Clone repo  
-   `git clone <your-repo-url>; cd "Visual Product Matcher Build"`
-2. Create venv and activate  
-   `python -m venv .venv; .\.venv\Scripts\Activate.ps1`
-3. Install dependencies  
-   `pip install -r requirements.txt`
-4. Configure environment  
-   Copy `.env.example` to `.env` and set `GEMINI_API_KEY`
-5. Validate products  
-   `python validate_products.py`  # expects success
-6. Start the app  
-   `python app.py`  # visit http://localhost:5000`
+1) Clone repo
+  git clone https://github.com/priyanshusingh017/Visual_Product_Matcher.git; cd Visual_Product_Matcher
+2) Create venv and activate
+   python -m venv .venv; .\.venv\Scripts\Activate.ps1
+3) Install dependencies
+   pip install -r requirements.txt
+4) Configure environment
+   Copy .env.example to .env and set GEMINI_API_KEY
+5) Validate products
+   python validate_products.py  # expects success
+6) Start the app
+   python app.py  # visit http://localhost:5000
 
 Dependencies (from requirements.txt):
 - Flask 3.1.2
@@ -335,7 +378,7 @@ GET /api/categories
 2. Login and create app:
    ```bash
    heroku login
-   cd "d:\Code\Visual Product Matcher Build"
+  cd path\to\Visual_Product_Matcher
    heroku create visual-product-matcher
    ```
 
@@ -382,7 +425,7 @@ After deploying, verify:
 ## 📂 Project Structure
 
 ```
-Visual Product Matcher Build/
+Visual_Product_Matcher/
 │
 ├── 📄 Core Application
 │   ├── app.py                    # Flask API server (594 lines)
@@ -413,7 +456,7 @@ Visual Product Matcher Build/
 │           └── ci.yml            # GitHub Actions pipeline
 │
 └── 📖 Documentation
-    └── README.md                 # This file (comprehensive guide)
+  └── README.md                 # This file (comprehensive guide)
 ```
 
 **Key Files Explained:**
@@ -830,17 +873,11 @@ time curl -X POST -F "image=@test.jpg" http://localhost:5000/api/search
 
 ---
 
-## 📄 License
-
-MIT License (see LICENSE)
-
----
-
 ## 💬 Support
 
 Need help? Here's how to get support:
 
-- 📧 **Email:** laxmanradhin@gmail.com
+- 📧 **Email:** singhpriyanshu661930@gmail.com
 - 🐛 **Bug Reports:** Open an issue on GitHub
 - 💡 **Feature Requests:** Open an issue with "enhancement" label
 - ❓ **Questions:** Open an issue with "question" label
