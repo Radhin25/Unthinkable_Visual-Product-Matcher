@@ -1,4 +1,5 @@
 #!/bin/bash
+# filepath: /Users/radhin/Downloads/Visual_Product_Matcher-main/setup.sh
 
 echo "===================================="
 echo "Visual Product Matcher Setup"
@@ -19,7 +20,7 @@ source venv/bin/activate
 echo ""
 
 echo "Step 3: Installing dependencies..."
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 if [ $? -ne 0 ]; then
     echo "Error: Failed to install dependencies"
     exit 1
@@ -46,6 +47,7 @@ echo "===================================="
 echo ""
 echo "To start the application:"
 echo "  1. Make sure you've added your GEMINI_API_KEY to .env"
-echo "  2. Run: python app.py"
-echo "  3. Open http://localhost:5000 in your browser"
+echo "  2. Activate the virtual environment: source venv/bin/activate"
+echo "  3. Run: python app.py"
+echo "  4. Open http://localhost:5000 in your browser"
 echo ""
